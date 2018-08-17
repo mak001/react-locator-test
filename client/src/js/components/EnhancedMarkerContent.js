@@ -2,7 +2,12 @@ import React from 'react';
 import Fragment from 'render-fragment';
 
 const EnhancedMarkerContent = (MarkerContent) => (props) => {
-  return (<Fragment>Fragment</Fragment>);
+  console.log(props);
+  return (
+    <Fragment>
+      Content Here
+    </Fragment>
+  );
 };
 
 export default EnhancedMarkerContent;
