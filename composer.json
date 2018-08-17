@@ -1,0 +1,34 @@
+{
+  "name": "mak001/loc-test",
+  "description": "Loc test",
+  "keywords": [
+    "silverstripe"
+  ],
+  "type": "silverstripe-vendormodule",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Matthew Koerber",
+      "email": "matthew@matthewkoerber.com",
+      "homepage": "http://matthewkoerber.com"
+    }
+  ],
+  "require": {
+    "silverstripe/recipe-cms": "^1.0",
+    "silverstripe/vendor-plugin": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/PHPUnit": "^5.7",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "config": {
+    "process-timeout": 600
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
