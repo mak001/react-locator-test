@@ -17,8 +17,14 @@ const MyReducerTransformer = (originalReducer) => (globalState) => (state, { typ
         }
 
         default: {
-            // it is important to return the originalReducer with original redux parameters.
-            return originalReducer(state, { type, payload });
+            if (state === undefined) {
+                return originalReducer(state, {type, payload});
+            }
+            // keeps markerOpen in the state. Disappears if another action is run
+            return {
+                ...originalReducer(state, {type, payload}),
+                markerOpen: state.markerOpen,
+            };
         }
     }
 };
